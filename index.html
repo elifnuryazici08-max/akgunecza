@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Akgün Ecza Deposu | Trabzon – 1986'dan Beri Güvenilir İlaç Tedariki</title>
+<meta name="description" content="Akgün Ecza Deposu San. ve Tic. A.Ş. – 1986'dan beri Trabzon'dan Karadeniz ve Doğu Anadolu'ya ilaç ve serum tedariki.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#1c2a5c;
+    --navy-deep:#131d42;
+    --lavender:#8f93c9;
+    --lavender-soft:#e9eaf6;
+    --paper:#fbfaf7;
+    --paper-2:#f3f1ec;
+    --ink:#24283a;
+    --muted:#646a80;
+    --line:#e3e1da;
+    --radius:18px;
+    --shadow:0 1px 2px rgba(19,29,66,.04),0 12px 32px -12px rgba(19,29,66,.14);
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth;scroll-padding-top:84px}
+  body{font-family:Inter,system-ui,sans-serif;background:var(--paper);color:var(--ink);line-height:1.7;font-size:17px;-webkit-font-smoothing:antialiased}
+  img{display:block;max-width:100%}
+  a{color:inherit;text-decoration:none}
+  .wrap{width:min(1160px,92%);margin-inline:auto}
+  h1,h2,h3{font-family:Fraunces,Georgia,serif;font-weight:600;color:var(--navy-deep);line-height:1.2;letter-spacing:-.01em}
+  .eyebrow{display:inline-flex;align-items:center;gap:10px;font-size:13px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--lavender)}
+  .eyebrow::before{content:"";width:28px;height:1.5px;background:currentColor}
+  section{padding:110px 0}
+  .section-head{max-width:640px;margin-bottom:56px}
+  .section-head h2{font-size:clamp(30px,4vw,44px);margin-top:14px}
+  .section-head p{color:var(--muted);margin-top:16px}
+
+  /* Header */
+  header{position:fixed;inset:0 0 auto;z-index:50;transition:background .3s,box-shadow .3s}
+  header.scrolled{background:rgba(251,250,247,.92);backdrop-filter:blur(12px);box-shadow:0 1px 0 var(--line)}
+  .nav{display:flex;align-items:center;justify-content:space-between;height:76px}
+  .brand{display:flex;align-items:center;gap:12px;font-weight:600;color:#fff;transition:color .3s}
+  header.scrolled .brand{color:var(--navy-deep)}
+  .brand small{display:block;font-weight:400;font-size:12px;opacity:.7;letter-spacing:.04em}
+  .logo{width:42px;height:42px;flex:none}
+  .menu{display:flex;gap:34px;list-style:none;font-size:15px;font-weight:500}
+  .menu a{color:rgba(255,255,255,.85);transition:color .2s}
+  header.scrolled .menu a{color:var(--muted)}
+  .menu a:hover,header.scrolled .menu a:hover{color:var(--lavender)}
+  .nav-cta{padding:10px 20px;border-radius:999px;background:#fff;color:var(--navy);font-weight:600;font-size:14px;transition:.2s}
+  header.scrolled .nav-cta{background:var(--navy);color:#fff}
+  .burger{display:none;background:none;border:0;color:#fff;cursor:pointer}
+  header.scrolled .burger{color:var(--navy)}
+
+  /* Hero */
+  .hero{position:relative;min-height:100vh;display:flex;align-items:center;padding:120px 0 80px;color:#fff;overflow:hidden}
+  .hero-bg{position:absolute;inset:0;background:url(img/galeri/galeri-1.jpg) center 30%/cover;transform:scale(1.04)}
+  .hero::after{content:"";position:absolute;inset:0;background:linear-gradient(105deg,rgba(19,29,66,.94) 0%,rgba(28,42,92,.82) 45%,rgba(28,42,92,.45) 100%)}
+  .hero .wrap{position:relative;z-index:1}
+  .hero .eyebrow{color:#c4c7ec}
+  .hero h1{color:#fff;font-size:clamp(40px,6.2vw,76px);max-width:820px;margin:22px 0 24px}
+  .hero h1 em{font-style:italic;color:#c4c7ec;font-weight:500}
+  .hero p{max-width:560px;font-size:19px;color:rgba(255,255,255,.8)}
+  .actions{display:flex;flex-wrap:wrap;gap:14px;margin-top:40px}
+  .btn{display:inline-flex;align-items:center;gap:10px;padding:15px 28px;border-radius:999px;font-weight:600;font-size:15px;transition:transform .2s,background .2s}
+  .btn:hover{transform:translateY(-2px)}
+  .btn-light{background:#fff;color:var(--navy)}
+  .btn-ghost{border:1.5px solid rgba(255,255,255,.4);color:#fff}
+  .btn-ghost:hover{background:rgba(255,255,255,.1)}
+  .stats{display:grid;grid-template-columns:repeat(3,auto);gap:56px;margin-top:80px;padding-top:36px;border-top:1px solid rgba(255,255,255,.18);width:fit-content}
+  .stats b{display:block;font-family:Fraunces,serif;font-size:42px;font-weight:500;line-height:1}
+  .stats span{font-size:14px;color:rgba(255,255,255,.65)}
+
+  /* About */
+  .about-grid{display:grid;grid-template-columns:1.05fr 1fr;gap:80px;align-items:center}
+  .about-img{position:relative}
+  .about-img img{border-radius:var(--radius);aspect-ratio:4/5;object-fit:cover;box-shadow:var(--shadow)}
+  .badge{position:absolute;right:-28px;bottom:40px;background:#fff;border-radius:16px;padding:20px 24px;box-shadow:var(--shadow);display:flex;gap:14px;align-items:center}
+  .badge b{font-family:Fraunces,serif;font-size:34px;color:var(--navy);line-height:1}
+  .badge span{font-size:13px;color:var(--muted);line-height:1.4}
+  .about-text p{color:var(--muted);margin-top:18px}
+  .principle{margin-top:32px;padding:24px 28px;border-left:3px solid var(--lavender);background:var(--lavender-soft);border-radius:0 14px 14px 0;color:var(--navy-deep);font-family:Fraunces,serif;font-size:19px;line-height:1.5}
+
+  /* Services */
+  .services{background:var(--paper-2)}
+  .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+  .card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:36px 32px;transition:transform .25s,box-shadow .25s}
+  .card:hover{transform:translateY(-4px);box-shadow:var(--shadow)}
+  .icon{width:52px;height:52px;border-radius:14px;background:var(--lavender-soft);color:var(--navy);display:grid;place-items:center;margin-bottom:24px}
+  .card h3{font-size:22px;margin-bottom:10px}
+  .card p{color:var(--muted);font-size:16px}
+
+  /* Quality */
+  .quality-grid{display:grid;grid-template-columns:1fr 1.3fr;gap:80px}
+  .q-list{list-style:none;display:grid;gap:4px}
+  .q-list li{display:grid;grid-template-columns:56px 1fr;padding:26px 0;border-bottom:1px solid var(--line)}
+  .q-list li:first-child{border-top:1px solid var(--line)}
+  .q-list .n{font-family:Fraunces,serif;color:var(--lavender);font-size:20px}
+  .q-list h3{font-size:20px;margin-bottom:6px}
+  .q-list p{color:var(--muted);font-size:16px}
+
+  /* Team */
+  .team{background:var(--navy-deep);color:#fff}
+  .team h2{color:#fff}
+  .team .section-head p{color:rgba(255,255,255,.6)}
+  .team .eyebrow{color:#c4c7ec}
+  .people{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+  .person{padding:30px;border:1px solid rgba(255,255,255,.12);border-radius:var(--radius);background:rgba(255,255,255,.03);transition:background .25s}
+  .person:hover{background:rgba(255,255,255,.07)}
+  .avatar{width:48px;height:48px;border-radius:50%;background:linear-gradient(135deg,var(--lavender),#5f64a8);display:grid;place-items:center;font-weight:600;font-size:16px;margin-bottom:20px}
+  .person h3{color:#fff;font-size:20px}
+  .person p{color:rgba(255,255,255,.6);font-size:15px;margin-top:4px}
+
+  /* Gallery */
+  .gallery{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:240px;gap:16px}
+  .gallery button{position:relative;border:0;padding:0;border-radius:var(--radius);overflow:hidden;cursor:zoom-in;background:var(--paper-2)}
+  .gallery button:nth-child(1){grid-column:span 2;grid-row:span 2}
+  .gallery button:nth-child(4){grid-column:span 1;grid-row:span 2}
+  .gallery button:nth-child(2){grid-row:span 2}
+  .gallery img{width:100%;height:100%;object-fit:cover;transition:transform .6s ease}
+  .gallery button:hover img{transform:scale(1.05)}
+  .gallery button::after{content:"";position:absolute;inset:0;background:linear-gradient(to top,rgba(19,29,66,.45),transparent 45%);opacity:0;transition:opacity .3s}
+  .gallery button:hover::after{opacity:1}
+
+  .lightbox{position:fixed;inset:0;z-index:100;background:rgba(13,18,40,.94);display:none;align-items:center;justify-content:center;padding:40px}
+  .lightbox.open{display:flex}
+  .lightbox img{max-height:86vh;max-width:min(1000px,86vw);border-radius:12px;object-fit:contain}
+  .lb-btn{position:absolute;background:rgba(255,255,255,.1);border:0;color:#fff;width:52px;height:52px;border-radius:50%;cursor:pointer;display:grid;place-items:center;transition:background .2s}
+  .lb-btn:hover{background:rgba(255,255,255,.2)}
+  .lb-close{top:24px;right:24px}.lb-prev{left:24px}.lb-next{right:24px}
+  .lb-count{position:absolute;bottom:24px;color:rgba(255,255,255,.6);font-size:14px}
+
+  /* Contact */
+  .contact{background:var(--paper-2)}
+  .contact-grid{display:grid;grid-template-columns:1fr 1.2fr;gap:24px}
+  .info{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:40px}
+  .info-row{display:flex;gap:18px;padding:20px 0;border-bottom:1px solid var(--line)}
+  .info-row:last-child{border:0;padding-bottom:0}
+  .info-row:first-child{padding-top:0}
+  .info-row .icon{margin:0;width:44px;height:44px;flex:none;border-radius:12px}
+  .info-row small{display:block;font-size:13px;color:var(--muted);text-transform:uppercase;letter-spacing:.08em;font-weight:600}
+  .info-row a:hover{color:var(--lavender)}
+  .map{border-radius:var(--radius);overflow:hidden;min-height:440px;border:1px solid var(--line)}
+  .map iframe{width:100%;height:100%;min-height:440px;border:0;filter:grayscale(.35) contrast(.95)}
+
+  footer{background:var(--navy-deep);color:rgba(255,255,255,.6);padding:56px 0 36px;font-size:15px}
+  .foot{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:24px}
+  footer .brand{color:#fff}
+  .foot-links{display:flex;gap:28px;list-style:none}
+  .foot-links a:hover{color:#fff}
+  .copy{margin-top:40px;padding-top:24px;border-top:1px solid rgba(255,255,255,.1);font-size:13px}
+
+  .reveal{opacity:0;transform:translateY(24px);transition:opacity .8s ease,transform .8s ease}
+  .reveal.in{opacity:1;transform:none}
+
+  @media (max-width:960px){
+    section{padding:80px 0}
+    .menu,.nav-cta{display:none}
+    .burger{display:block}
+    .menu.open{display:flex;flex-direction:column;position:absolute;top:76px;left:4%;right:4%;background:#fff;border-radius:16px;padding:24px;gap:18px;box-shadow:var(--shadow)}
+    .menu.open a{color:var(--ink)}
+    .about-grid,.quality-grid,.contact-grid{grid-template-columns:1fr;gap:48px}
+    .badge{right:16px}
+    .cards,.people{grid-template-columns:1fr 1fr}
+    .gallery{grid-template-columns:1fr 1fr;grid-auto-rows:200px}
+    .gallery button:nth-child(n){grid-column:auto;grid-row:auto}
+    .gallery button:nth-child(1){grid-column:span 2;grid-row:span 2}
+    .stats{gap:32px}
+  }
+  @media (max-width:600px){
+    .cards,.people{grid-template-columns:1fr}
+    .stats{grid-template-columns:1fr 1fr 1fr;gap:20px}
+    .stats b{font-size:32px}
+    .lb-prev,.lb-next{bottom:24px;top:auto}
+  }
+  @media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}.reveal{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute">
+  <symbol id="logo" viewBox="0 0 48 48">
+    <rect width="48" height="48" rx="11" fill="#8f93c9"/>
+    <path d="M17 9h14l9 30H8z" fill="#fff"/>
+    <path d="M21 14v25M24 14v25M27 14v25M31 26H17" stroke="#8f93c9" stroke-width="2"/>
+  </symbol>
+</svg>
+
+<header id="top">
+  <div class="wrap nav">
+    <a href="#" class="brand"><svg class="logo"><use href="#logo"/></svg><span>Akgün Ecza Deposu<small>San. ve Tic. A.Ş.</small></span></a>
+    <ul class="menu" id="menu">
+      <li><a href="#hakkimizda">Hakkımızda</a></li>
+      <li><a href="#hizmetler">Hizmetler</a></li>
+      <li><a href="#kalite">Kalite</a></li>
+      <li><a href="#yonetim">Yönetim</a></li>
+      <li><a href="#galeri">Foto Galeri</a></li>
+      <li><a href="#iletisim">İletişim</a></li>
+    </ul>
+    <a href="tel:+904622300110" class="nav-cta">0462 230 01 10</a>
+    <button class="burger" aria-label="Menü" onclick="document.getElementById('menu').classList.toggle('open')">
+      <svg width="26" height="26" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 8h18M4 13h18M4 18h18"/></svg>
+    </button>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="wrap">
+    <span class="eyebrow">Trabzon · 1986'dan beri</span>
+    <h1>Sağlığa giden yolda <em>güvenilir</em> tedarik ortağınız.</h1>
+    <p>Karadeniz ve Doğu Anadolu'daki hastanelere ve eczanelere ilaç ve serum tedarikinde kırk yıllık bir güven.</p>
+    <div class="actions">
+      <a href="#iletisim" class="btn btn-light">Bize Ulaşın
+        <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 9h10M10 5l4 4-4 4"/></svg></a>
+      <a href="#hakkimizda" class="btn btn-ghost">Kurumsal</a>
+    </div>
+    <div class="stats">
+      <div><b>40</b><span>yıllık tecrübe</span></div>
+      <div><b>2</b><span>bölgeye hizmet</span></div>
+      <div><b>3</b><span>müşteri hattı</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="hakkimizda">
+  <div class="wrap about-grid">
+    <div class="about-img reveal">
+      <img src="img/galeri/galeri-3.jpg" alt="Akgün Ecza Deposu binası, Trabzon" loading="lazy">
+      <div class="badge"><b>1986</b><span>Trabzon'da<br>kuruldu</span></div>
+    </div>
+    <div class="about-text reveal">
+      <span class="eyebrow">Hakkımızda</span>
+      <h2 style="font-size:clamp(30px,4vw,44px);margin-top:14px">Kırk yıldır aynı özen, aynı dürüstlük.</h2>
+      <p>Firmamız 1986 yılında Kemal Akgün tarafından Trabzon'da kuruldu. 1998 yılına kadar Trabzon ve çevre illerdeki eczanelere hizmet verdi.</p>
+      <p>Bugün Orta ve Doğu Karadeniz ile Doğu Anadolu bölgelerindeki devlet, üniversite, askeri ve özel hastanelere ve il sağlık müdürlüklerine; ihale ve doğrudan alım yoluyla ilaç ve serum tedariki sağlıyoruz.</p>
+      <div class="principle">“İlkemiz; müşteri memnuniyeti, dürüst ve disiplinli çalışma, en uygun fiyat ve sözleşme koşullarıdır.”</div>
+    </div>
+  </div>
+</section>
+
+<section id="hizmetler" class="services">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">Hizmetlerimiz</span>
+      <h2>Doğru ürün, doğru zamanda, doğru yerde.</h2>
+    </div>
+    <div class="cards">
+      <div class="card reveal">
+        <div class="icon"><svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M5 21V8l7-5 7 5v13M10 21v-5h4v5M12 8v4M10 10h4"/></svg></div>
+        <h3>Hastane Tedariki</h3>
+        <p>Devlet, üniversite, askeri ve özel hastanelere ihale ve doğrudan alım ile ilaç ve serum temini.</p>
+      </div>
+      <div class="card reveal">
+        <div class="icon"><svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="7" width="18" height="13" rx="3"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2M12 11v5M9.5 13.5h5"/></svg></div>
+        <h3>İlaç & Serum</h3>
+        <p>Geniş ürün yelpazesi, güvenli depolama koşulları ve izlenebilir bir tedarik zinciri.</p>
+      </div>
+      <div class="card reveal">
+        <div class="icon"><svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M1 6h13v10H1zM14 10h4l4 3v3h-8"/><circle cx="5.5" cy="18" r="2"/><circle cx="18" cy="18" r="2"/></svg></div>
+        <h3>Bölgesel Sevkiyat</h3>
+        <p>Orta ve Doğu Karadeniz ile Doğu Anadolu'ya planlı, hızlı ve düzenli dağıtım.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="kalite">
+  <div class="wrap quality-grid">
+    <div class="section-head reveal" style="margin:0">
+      <span class="eyebrow">Kalite Politikamız</span>
+      <h2>Standartları yükseltmek bizim işimiz.</h2>
+      <p>Her gün daha iyi hizmet vermek için sistemli, planlı ve çözüm odaklı çalışıyoruz.</p>
+    </div>
+    <ul class="q-list reveal">
+      <li><span class="n">01</span><div><h3>Dünya standartlarında depo</h3><p>Ürünlerin güvenli ve doğru koşullarda saklandığı modern bir depo hedefliyoruz.</p></div></li>
+      <li><span class="n">02</span><div><h3>Müşteri memnuniyeti</h3><p>Tüm çalışanlarımızla kaliteli hizmet anlayışını benimsiyoruz.</p></div></li>
+      <li><span class="n">03</span><div><h3>Planlı ve sistemli çalışma</h3><p>Sorunları önceden öngörüp çözüm odaklı hizmet sunuyoruz.</p></div></li>
+    </ul>
+  </div>
+</section>
+
+<section id="yonetim" class="team">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">Yönetim Kurulu</span>
+      <h2>İşini bilen, işine güvenen bir ekip.</h2>
+    </div>
+    <div class="people">
+      <div class="person reveal"><div class="avatar">KA</div><h3>Kemal Akgün</h3><p>Yönetim Kurulu Başkanı ve Genel Müdür</p></div>
+      <div class="person reveal"><div class="avatar">FA</div><h3>Fatih Mehmet Akgün</h3><p>Yön. Kur. Başkan Yardımcısı · Mali İşler Sorumlusu</p></div>
+      <div class="person reveal"><div class="avatar">VO</div><h3>Veysel Ofluoğlu</h3><p>Yön. Kur. Üyesi ve Yönetim Temsilcisi</p></div>
+      <div class="person reveal"><div class="avatar">İG</div><h3>Ecz. İsmet Gürkik</h3><p>Mesul Müdür</p></div>
+      <div class="person reveal"><div class="avatar">RK</div><h3>Remzi Kuvvet</h3><p>Sevkiyat ve Depo Sorumlusu</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="galeri">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">Foto Galeri</span>
+      <h2>Bizden kareler.</h2>
+      <p>Fatih Mahallesi'ndeki merkez binamız ve depomuz.</p>
+    </div>
+    <div class="gallery reveal" id="gallery">
+      <button><img src="img/galeri/galeri-1.jpg" alt="Akgün Ecza Deposu cephesi" loading="lazy"></button>
+      <button><img src="img/galeri/galeri-2.jpg" alt="Akgün Ecza Deposu, yeşillikler arasından" loading="lazy"></button>
+      <button><img src="img/galeri/galeri-3.jpg" alt="Akgün Ecza Deposu binası" loading="lazy"></button>
+      <button><img src="img/galeri/galeri-4.jpg" alt="Akgün Ecza Deposu girişi" loading="lazy"></button>
+    </div>
+  </div>
+</section>
+
+<div class="lightbox" id="lb" role="dialog" aria-modal="true">
+  <button class="lb-btn lb-close" aria-label="Kapat"><svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4l12 12M16 4L4 16"/></svg></button>
+  <button class="lb-btn lb-prev" aria-label="Önceki"><svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 4l-6 6 6 6"/></svg></button>
+  <img id="lbImg" alt="">
+  <button class="lb-btn lb-next" aria-label="Sonraki"><svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 4l6 6-6 6"/></svg></button>
+  <span class="lb-count" id="lbCount"></span>
+</div>
+
+<section id="iletisim" class="contact">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">İletişim</span>
+      <h2>Size nasıl yardımcı olabiliriz?</h2>
+    </div>
+    <div class="contact-grid">
+      <div class="info reveal">
+        <div class="info-row"><div class="icon"><svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M10 18s6-5.5 6-10A6 6 0 0 0 4 8c0 4.5 6 10 6 10z"/><circle cx="10" cy="8" r="2"/></svg></div>
+          <div><small>Adres</small>Fatih Mah. Osman Turan Cad. No:12<br>Trabzon</div></div>
+        <div class="info-row"><div class="icon"><svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M18 14v2.5a1.5 1.5 0 0 1-1.6 1.5A15 15 0 0 1 2 3.6 1.5 1.5 0 0 1 3.5 2H6l1.5 4-2 1.3a10 10 0 0 0 7.2 7.2L14 12.5z"/></svg></div>
+          <div><small>Müşteri Hattı</small><a href="tel:+904622300110">0462 230 01 10</a> · <a href="tel:+904622300111">11</a> · <a href="tel:+904622300112">12</a></div></div>
+        <div class="info-row"><div class="icon"><svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="4" y="2" width="12" height="6"/><rect x="2" y="8" width="16" height="8" rx="2"/><path d="M6 16v2h8v-2"/></svg></div>
+          <div><small>Faks</small>0462 230 01 13</div></div>
+        <div class="info-row"><div class="icon"><svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="4" width="16" height="12" rx="2"/><path d="M2 6l8 5 8-5"/></svg></div>
+          <div><small>E-posta</small><a href="mailto:akgunecza@hotmail.com">akgunecza@hotmail.com</a></div></div>
+      </div>
+      <div class="map reveal">
+        <iframe src="https://maps.google.com/maps?q=Fatih%20Mah.%20Osman%20Turan%20Cad.%20No%3A12%20Trabzon&z=16&output=embed" loading="lazy" title="Akgün Ecza Deposu konumu" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot">
+      <a href="#" class="brand"><svg class="logo"><use href="#logo"/></svg><span>Akgün Ecza Deposu<small>San. ve Tic. A.Ş.</small></span></a>
+      <ul class="foot-links">
+        <li><a href="#hakkimizda">Kurumsal</a></li>
+        <li><a href="http://www.iegm.gov.tr/Default.aspx?sayfa=fiyat_listesi" target="_blank" rel="noopener">Fiyat Listesi</a></li>
+        <li><a href="#galeri">Galeri</a></li>
+        <li><a href="#iletisim">İletişim</a></li>
+      </ul>
+    </div>
+    <div class="copy">© <span id="yr"></span> Akgün Ecza Deposu San. ve Tic. A.Ş. Tüm hakları saklıdır.</div>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('yr').textContent = new Date().getFullYear();
+  const header = document.querySelector('header');
+  const onScroll = () => header.classList.toggle('scrolled', scrollY > 40);
+  addEventListener('scroll', onScroll, {passive:true}); onScroll();
+  document.querySelectorAll('.menu a').forEach(a => a.addEventListener('click', () => document.getElementById('menu').classList.remove('open')));
+
+  const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } }), {threshold:.12});
+  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+  const imgs = [...document.querySelectorAll('#gallery img')];
+  const lb = document.getElementById('lb'), lbImg = document.getElementById('lbImg'), lbCount = document.getElementById('lbCount');
+  let i = 0;
+  const show = n => { i = (n + imgs.length) % imgs.length; lbImg.src = imgs[i].src; lbImg.alt = imgs[i].alt; lbCount.textContent = (i+1) + ' / ' + imgs.length; };
+  imgs.forEach((im, n) => im.parentElement.addEventListener('click', () => { show(n); lb.classList.add('open'); }));
+  const close = () => lb.classList.remove('open');
+  lb.querySelector('.lb-close').onclick = close;
+  lb.querySelector('.lb-prev').onclick = e => { e.stopPropagation(); show(i-1); };
+  lb.querySelector('.lb-next').onclick = e => { e.stopPropagation(); show(i+1); };
+  lb.addEventListener('click', e => { if (e.target === lb) close(); });
+  addEventListener('keydown', e => { if (!lb.classList.contains('open')) return;
+    if (e.key === 'Escape') close(); if (e.key === 'ArrowLeft') show(i-1); if (e.key === 'ArrowRight') show(i+1); });
+</script>
+</body>
+</html>
