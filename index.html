@@ -100,17 +100,6 @@
   .q-list h3{font-size:20px;margin-bottom:6px}
   .q-list p{color:var(--muted);font-size:16px}
 
-  /* Team */
-  .team{background:var(--navy-deep);color:#fff}
-  .team h2{color:#fff}
-  .team .section-head p{color:rgba(255,255,255,.6)}
-  .team .eyebrow{color:#c4c7ec}
-  .people{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
-  .person{padding:30px;border:1px solid rgba(255,255,255,.12);border-radius:var(--radius);background:rgba(255,255,255,.03);transition:background .25s}
-  .person:hover{background:rgba(255,255,255,.07)}
-  .avatar{width:48px;height:48px;border-radius:50%;background:linear-gradient(135deg,var(--lavender),#5f64a8);display:grid;place-items:center;font-weight:600;font-size:16px;margin-bottom:20px}
-  .person h3{color:#fff;font-size:20px}
-  .person p{color:rgba(255,255,255,.6);font-size:15px;margin-top:4px}
 
   /* Gallery */
   .gallery{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:240px;gap:16px}
@@ -162,14 +151,14 @@
     .menu.open a{color:var(--ink)}
     .about-grid,.quality-grid,.contact-grid{grid-template-columns:1fr;gap:48px}
     .badge{right:16px}
-    .cards,.people{grid-template-columns:1fr 1fr}
+    .cards{grid-template-columns:1fr 1fr}
     .gallery{grid-template-columns:1fr 1fr;grid-auto-rows:200px}
     .gallery button:nth-child(n){grid-column:auto;grid-row:auto}
     .gallery button:nth-child(1){grid-column:span 2;grid-row:span 2}
     .stats{gap:32px}
   }
   @media (max-width:600px){
-    .cards,.people{grid-template-columns:1fr}
+    .cards{grid-template-columns:1fr}
     .stats{grid-template-columns:1fr 1fr 1fr;gap:20px}
     .stats b{font-size:32px}
     .lb-prev,.lb-next{bottom:24px;top:auto}
@@ -194,7 +183,6 @@
       <li><a href="#hakkimizda">Hakkımızda</a></li>
       <li><a href="#hizmetler">Hizmetler</a></li>
       <li><a href="#kalite">Kalite</a></li>
-      <li><a href="#yonetim">Yönetim</a></li>
       <li><a href="#galeri">Foto Galeri</a></li>
       <li><a href="#iletisim">İletişim</a></li>
     </ul>
@@ -281,22 +269,6 @@
   </div>
 </section>
 
-<section id="yonetim" class="team">
-  <div class="wrap">
-    <div class="section-head reveal">
-      <span class="eyebrow">Yönetim Kurulu</span>
-      <h2>İşini bilen, işine güvenen bir ekip.</h2>
-    </div>
-    <div class="people">
-      <div class="person reveal"><div class="avatar">KA</div><h3>Kemal Akgün</h3><p>Yönetim Kurulu Başkanı ve Genel Müdür</p></div>
-      <div class="person reveal"><div class="avatar">FA</div><h3>Fatih Mehmet Akgün</h3><p>Yön. Kur. Başkan Yardımcısı · Mali İşler Sorumlusu</p></div>
-      <div class="person reveal"><div class="avatar">VO</div><h3>Veysel Ofluoğlu</h3><p>Yön. Kur. Üyesi ve Yönetim Temsilcisi</p></div>
-      <div class="person reveal"><div class="avatar">İG</div><h3>Ecz. İsmet Gürkik</h3><p>Mesul Müdür</p></div>
-      <div class="person reveal"><div class="avatar">RK</div><h3>Remzi Kuvvet</h3><p>Sevkiyat ve Depo Sorumlusu</p></div>
-    </div>
-  </div>
-</section>
-
 <section id="galeri">
   <div class="wrap">
     <div class="section-head reveal">
@@ -330,7 +302,7 @@
     <div class="contact-grid">
       <div class="info reveal">
         <div class="info-row"><div class="icon"><svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M10 18s6-5.5 6-10A6 6 0 0 0 4 8c0 4.5 6 10 6 10z"/><circle cx="10" cy="8" r="2"/></svg></div>
-          <div><small>Adres</small>Fatih Mah. Osman Turan Cad. No:12<br>Trabzon</div></div>
+          <div><small>Adres</small>Fatih Mah. Prof. Dr. Osman Turan Cad.<br>Taksim Apt. No:10<br>Ortahisar / Trabzon</div></div>
         <div class="info-row"><div class="icon"><svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M18 14v2.5a1.5 1.5 0 0 1-1.6 1.5A15 15 0 0 1 2 3.6 1.5 1.5 0 0 1 3.5 2H6l1.5 4-2 1.3a10 10 0 0 0 7.2 7.2L14 12.5z"/></svg></div>
           <div><small>Müşteri Hattı</small><a href="tel:+904622300110">0462 230 01 10</a> · <a href="tel:+904622300111">11</a> · <a href="tel:+904622300112">12</a></div></div>
         <div class="info-row"><div class="icon"><svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="4" y="2" width="12" height="6"/><rect x="2" y="8" width="16" height="8" rx="2"/><path d="M6 16v2h8v-2"/></svg></div>
@@ -339,7 +311,7 @@
           <div><small>E-posta</small><a href="mailto:akgunecza@hotmail.com">akgunecza@hotmail.com</a></div></div>
       </div>
       <div class="map reveal">
-        <iframe src="https://maps.google.com/maps?q=Fatih%20Mah.%20Osman%20Turan%20Cad.%20No%3A12%20Trabzon&z=16&output=embed" loading="lazy" title="Akgün Ecza Deposu konumu" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe src="https://maps.google.com/maps?q=Fatih%20Mah.%20Prof.%20Dr.%20Osman%20Turan%20Cad.%20No%3A10%20Ortahisar%20Trabzon&z=16&output=embed" loading="lazy" title="Akgün Ecza Deposu konumu" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
     </div>
   </div>
